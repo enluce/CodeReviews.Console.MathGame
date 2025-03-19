@@ -49,7 +49,6 @@ internal class Helpers
     {
 
         // var gamesToPrint = games.Where(x => x.Type == GameType.Division); // Where Clause provided by LINQ and not the List method where predicate consists of a lambda function with parameter on left side and a boolean expression to be evaluated on the right separated by arrow function. True records get added to the output.
-        // gamesToPrint = games.Where(x => x.Date > new DateTime(2025, 03, 21) && x.Score > 3);
         // gamesToPrint = games.Where(x => x.Date > new DateTime(2025, 03, 21)).OrderByDescending(x => x.Score); // Chaining Clauses
         Console.Clear();
         Console.WriteLine("Games History");
@@ -65,7 +64,6 @@ internal class Helpers
 
     internal static void AddToHistory(int gameScore, GameType gameType)
     {
-        // games.Add($"{DateTime.Now} - {gameType}: Score={gameScore}");
         games.Add(new Game
         {
                 Date = DateTime.Now,

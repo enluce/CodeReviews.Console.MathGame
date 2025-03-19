@@ -52,7 +52,6 @@ Q - Quit the program");
                 case "q":
                     Console.WriteLine("Goodbye");
                     isGameOn = false;
-                    // Environment.Exit(1);
                     break;
                 default:
                     Console.WriteLine("Invalid Input");
